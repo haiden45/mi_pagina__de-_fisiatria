@@ -109,6 +109,7 @@ section h2 {
     padding: 60px 0;
 }
 
+
 #contacto p {
     margin: 10px 0;
     font-size: 1.1rem;
@@ -152,3 +153,58 @@ footer {
         flex-direction: column;
     }
 }
+/* Contacto: botones de redes sociales modernos */
+.contacto-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contacto-container .correo {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contacto-container .correo:hover {
+    text-decoration: underline;
+}
+
+.redes {
+    margin-top: 20px;
+}
+
+.btn-social {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    font-size: 0.95rem;
+}
+.redes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn-social i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+/* Colores por red */
+.btn-social.github { background: #333; }
+.btn-social.github:hover { background: #555; }
+
+.btn-social.linkedin { background: #0077b5; }
+.btn-social.linkedin:hover { background: #005582; }
+
+.btn-social.instagram { background: #e4405f; }
+.btn-social.instagram:hover { background: #b22c44; }
