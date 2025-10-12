@@ -1,0 +1,7 @@
+# Archivos temporales de Word
+*.docx
+~$*
+
+# Caché de Python
+__pycache__/
+*.pyc
