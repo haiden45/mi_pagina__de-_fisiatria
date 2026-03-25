@@ -3,113 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
+    <title>Electrodiagnóstico del Eje Cafetero</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <!-- Fuente -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+
+    <!-- Font Awesome (íconos) -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-<!-- Header -->
+<!-- HEADER -->
 <header>
     <div class="container">
-        <h1>Mi Nombre</h1>
-        <p>Desarrollador / Diseñador / Apasionado por la tecnología</p>
+        <h1>Electrodiagnóstico del Eje Cafetero</h1>
+        <p>Estudios especializados en electromiografía y conducción nerviosa</p>
     </div>
 </header>
 
-<!-- Sobre mí -->
+<!-- SOBRE NOSOTROS -->
 <section id="sobre-mi">
     <div class="container">
-        <h2>Sobre mí</h2>
+        <h2>Sobre Nosotros</h2>
         <div class="about-content">
-            <img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="Foto de perfil">
+            <img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="Foto profesional">
             <p>
-                Soy un apasionado del desarrollo web y la tecnología. Me gusta crear proyectos que combinen funcionalidad con buen diseño y una experiencia de usuario agradable.
+                Brindamos servicios especializados en electrodiagnóstico en el Eje Cafetero, 
+                con altos estándares de calidad, precisión y atención al paciente. 
+                Contamos con experiencia en estudios neuromusculares para apoyar el diagnóstico clínico.
             </p>
         </div>
     </div>
 </section>
 
-<!-- Proyectos -->
-<section id="proyectos">
+<!-- SERVICIOS -->
+<section id="servicios">
     <div class="container">
-        <h2>Proyectos</h2>
+        <h2>Servicios</h2>
+
         <div class="card-container">
 
-            <!-- Proyecto 1 -->
-            <a href="https://github.com/haiden45/mi_pagina__de-_fisiatria" target="_blank">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="Proyecto 1">
-                    <h3>Proyecto 1</h3>
-                    <p>Portfolio web en Flask con diseño moderno y responsive. Funcionalidad de login y showcase de proyectos.</p>
-                </div>
-            </a>
+            <div class="card">
+                <h3>Electromiografía (EMG)</h3>
+                <p>Evaluación de la actividad eléctrica de los músculos.</p>
+            </div>
 
-            <!-- Proyecto 2 -->
-            <a href="https://github.com/haiden45/mi_pagina__de-_fisiatria" target="_blank">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="Proyecto 2">
-                    <h3>Proyecto 2</h3>
-                    <p>Aplicación de gestión de tareas con Python y SQLite, con interfaz web interactiva y filtrado por categorías.</p>
-                </div>
-            </a>
+            <div class="card">
+                <h3>Velocidad de Conducción Nerviosa</h3>
+                <p>Medición de la velocidad de transmisión nerviosa.</p>
+            </div>
 
-            <!-- Proyecto 3 -->
-            <a href="https://github.com/haiden45/mi_pagina__de-_fisiatria" target="_blank">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="Proyecto 3">
-                    <h3>Proyecto 3</h3>
-                    <p>Dashboard de datos con gráficos dinámicos usando Flask y Chart.js. Visualización clara de métricas importantes.</p>
-                </div>
-            </a>
+            <div class="card">
+                <h3>Estudios Neuromusculares</h3>
+                <p>Diagnóstico de patologías del sistema nervioso periférico.</p>
+            </div>
 
-            <!-- Proyecto 4 -->
-            <a href="https://github.com/haiden45/mi_pagina__de-_fisiatria" target="_blank">
-                <div class="card">
-                    <img src="{{ url_for('static', filename='img/perfil.jpg') }}" alt="Proyecto 4">
-                    <h3>Proyecto 4</h3>
-                    <p>Aplicación de análisis de datos con Python y Pandas, mostrando resultados en reportes interactivos.</p>
-                </div>
-            </a>
+            <div class="card">
+                <h3>Apoyo Diagnóstico</h3>
+                <p>Resultados precisos para apoyo clínico especializado.</p>
+            </div>
 
         </div>
     </div>
 </section>
 
-
-
-<!-- Contacto -->
+<!-- CONTACTO -->
 <section id="contacto">
     <div class="container contacto-container">
         <h2>Contacto</h2>
-        <p>¿Quieres trabajar conmigo o preguntar algo? Escríbeme a:</p>
-        <p><a class="correo" href="mailto:haidenperezdoc@hotmail.com">haidenperezdoc@hotmail.com</a></p>
 
-        <p>Sígueme en mis redes sociales:</p>
+        <p>Agenda tu cita o solicita información:</p>
+
+        <p>
+            📧 <a class="correo" href="mailto:haidenperezdoc@hotmail.com">
+                haidenperezdoc@hotmail.com
+            </a>
+        </p>
+
+        <p>
+            📱 WhatsApp:
+            <a class="correo" href="https://wa.me/573168336878" target="_blank">
+                Escríbenos aquí
+            </a>
+        </p>
+
+        <p>📍 Eje Cafetero, Colombia</p>
+
+        <h3>Síguenos en redes</h3>
+
         <div class="redes">
             <a class="btn-social github" href="https://github.com/haiden45" target="_blank">
                 <i class="fab fa-github"></i> GitHub
             </a>
+
             <a class="btn-social linkedin" href="https://www.linkedin.com/in/haiden-perez-5707a955/" target="_blank">
                 <i class="fab fa-linkedin"></i> LinkedIn
             </a>
+
             <a class="btn-social instagram" href="https://www.instagram.com/haiden.perez" target="_blank">
                 <i class="fab fa-instagram"></i> Instagram
             </a>
         </div>
+
     </div>
 </section>
 
-
-
-
-
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
     <div class="container">
-        <p>© 2025 Mi Nombre - Todos los derechos reservados</p>
+        <p>&copy; 2025 Electrodiagnóstico del Eje Cafetero - Todos los derechos reservados</p>
     </div>
 </footer>
 
