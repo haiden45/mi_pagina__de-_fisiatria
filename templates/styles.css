@@ -239,3 +239,16 @@ header .btn-social {
 header .btn-social:hover {
     background: #1ebe5d;
 }
+/* BOTÓN WHATSAPP CORREGIDO */
+.btn-social.whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
+.btn-social.whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.btn-social i {
+    margin-right: 8px;
+}
