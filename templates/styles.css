@@ -208,3 +208,34 @@ footer {
 
 .btn-social.instagram { background: #e4405f; }
 .btn-social.instagram:hover { background: #b22c44; }
+/* 🔥 ARREGLO DEL HEADER (elimina el bloque blanco) */
+header .container {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+/* HEADER MÁS PROFESIONAL */
+header {
+    background: linear-gradient(135deg, #4a90e2, #357ABD);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+header .btn-social {
+    background: #25D366; /* verde WhatsApp */
+    font-size: 1rem;
+}
+
+header .btn-social:hover {
+    background: #1ebe5d;
+}
