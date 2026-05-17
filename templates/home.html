@@ -54,10 +54,12 @@
 <!-- SERVICIOS -->
 <section id="servicios">
     <div class="container">
+
         <h2>Servicios</h2>
 
         <div class="card-container">
 
+            <!-- ELECTROMIOGRAFÍA -->
             <div class="card">
 
                 <img src="{{ url_for('static', filename='img/emg.jpg') }}" alt="Electromiografía">
@@ -82,27 +84,82 @@
 
             </div>
 
+            <!-- CONDUCCIÓN NERVIOSA -->
+            <div class="card">
+
+                <img src="{{ url_for('static', filename='img/conduccion.jpg') }}" alt="Conducción nerviosa">
+
+                <h3>Velocidad de Conducción Nerviosa</h3>
+
+                <p>
+                    Medición de la velocidad de transmisión nerviosa.
+                </p>
+
+                <button class="toggle-btn">
+                    Ver más
+                </button>
+
+                <div class="service-details">
+                    <p>
+                        Permite evaluar el funcionamiento de los nervios periféricos
+                        y detectar alteraciones como neuropatías o síndrome del túnel carpiano.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- POTENCIALES EVOCADOS -->
+            <div class="card">
+
+                <img src="{{ url_for('static', filename='img/potenciales.jpg') }}" alt="Potenciales evocados">
+
+                <h3>Potenciales Evocados</h3>
+
+                <p>
+                    Evaluación funcional de las vías nerviosas sensoriales.
+                </p>
+
+                <button class="toggle-btn">
+                    Ver más
+                </button>
+
+                <div class="service-details">
+                    <p>
+                        Estudio utilizado para analizar la respuesta del sistema nervioso
+                        ante estímulos visuales, auditivos o sensitivos.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- FISIATRÍA -->
+            <div class="card">
+
+                <img src="{{ url_for('static', filename='img/fisiatria.jpg') }}" alt="Consulta de fisiatría">
+
+                <h3>Consulta Especializada de Fisiatría</h3>
+
+                <p>
+                    Evaluación y tratamiento de enfermedades osteomusculares y neuromusculares.
+                </p>
+
+                <button class="toggle-btn">
+                    Ver más
+                </button>
+
+                <div class="service-details">
+                    <p>
+                        Consulta médica enfocada en rehabilitación física,
+                        dolor musculoesquelético y recuperación funcional.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
+
     </div>
 </section>
-
-            <div class="card">
-                <h3>Velocidad de Conducción Nerviosa</h3>
-                <p>Medición de la velocidad de transmisión nerviosa.</p>
-            </div>
-
-            <div class="card">
-                <h3>Potenciales evocados</h3>
-                <p>Diagnóstico de patologías del sistema nervioso periférico.</p>
-            </div>
-
-            <div class="card">
-                <h3>Consulta especializada de fisiatria</h3>
-                <p>Evaluacion y tratamiento de enfermedades osteomusculares y neuromusculares.</p>
-            </div>
-
-        </div>
-    </div>
 </section>
 <section id="blog">
     <div class="container">
