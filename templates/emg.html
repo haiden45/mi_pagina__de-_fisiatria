@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electromiografía (EMG)</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <h1>Electromiografía (EMG)</h1>
+
+            <p>
+                Estudio especializado de diagnóstico neuromuscular
+            </p>
+
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+
+            <img 
+                src="{{ url_for('static', filename='img/emg.jpg') }}" 
+                alt="Electromiografía"
+                style="width:100%; max-width:700px; border-radius:10px; margin-bottom:30px;"
+            >
+
+            <h2>¿Qué es la electromiografía?</h2>
+
+            <p>
+                La electromiografía es un estudio diagnóstico utilizado para evaluar
+                la función de músculos y nervios periféricos.
+            </p>
+
+            <p>
+                Permite identificar enfermedades neuromusculares, neuropatías,
+                radiculopatías y síndromes de atrapamiento nervioso como
+                el túnel carpiano.
+            </p>
+
+            <h2>¿Cuándo se solicita?</h2>
+
+            <ul>
+                <li>Dolor o debilidad muscular</li>
+                <li>Hormigueo o adormecimiento</li>
+                <li>Sospecha de túnel carpiano</li>
+                <li>Lesiones nerviosas</li>
+                <li>Radiculopatías cervicales o lumbares</li>
+            </ul>
+
+            <br>
+
+            <a href="/" class="btn-social">
+                ← Volver al inicio
+            </a>
+
+        </div>
+    </section>
+
+</body>
+</html>
