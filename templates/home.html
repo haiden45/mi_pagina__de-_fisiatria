@@ -165,6 +165,26 @@
     </div>
 </footer>
 
+<script>
+    const buttons = document.querySelectorAll(".toggle-btn");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+
+            const details = button.nextElementSibling;
+
+            if (details.style.display === "block") {
+                details.style.display = "none";
+                button.textContent = "Ver más";
+            } else {
+                details.style.display = "block";
+                button.textContent = "Ver menos";
+            }
+
+        });
+    });
+</script>
+
 </body>
 </html>
 
