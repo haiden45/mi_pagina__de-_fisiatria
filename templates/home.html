@@ -25,15 +25,41 @@
 
 <!-- HEADER -->
 <header>
-    <h1>Electrodiagnóstico del Eje Cafetero</h1>
 
-    <p>
-        Estudios especializados en electromiografía y conducción nerviosa
-    </p>
+    <div class="container">
 
-    <a href="https://wa.me/573168336878" target="_blank" rel="noopener noreferrer" class="btn-social">
-        📱 Agendar cita por WhatsApp
-    </a>
+        <h1>Electrodiagnóstico del Eje Cafetero</h1>
+
+        <h2>Neurofisiología clínica con precisión, experiencia y compromiso</h2>
+
+        <p class="doctor">
+
+            <strong>Dr. Haiden Pérez</strong><br>
+
+            Médico Especialista en Medicina Física y Rehabilitación
+
+        </p>
+
+        <p class="descripcion">
+
+            Centro especializado en electromiografía, estudios de conducción nerviosa,
+            potenciales evocados, procedimientos especializados y rehabilitación integral.
+
+        </p>
+
+        <a href="https://wa.me/573168336878"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn-social whatsapp">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Solicitar cita
+
+        </a>
+
+    </div>
+
 </header>
 
 <!-- SOBRE NOSOTROS -->
@@ -70,43 +96,29 @@
                     Evaluación de la actividad eléctrica de los músculos.
                 </p>
 
-                <button class="toggle-btn">
-                    Ver más
-                </button>
-
-                <div class="service-details">
-                    <p>
-                        Estudio especializado utilizado para diagnosticar neuropatías,
-                        radiculopatías, síndrome del túnel carpiano y enfermedades
-                        neuromusculares.
-                    </p>
-                </div>
+                <a href="/emg" class="btn-social">
+                    Ver servicio
+                </a>
 
             </div>
 
             <!-- CONDUCCIÓN NERVIOSA -->
-            <div class="card">
+            <!-- ESTUDIOS NEUROFISIOLÓGICOS -->
+        <div class="card">
 
-                <img src="{{ url_for('static', filename='img/conduccion.jpg') }}" alt="Conducción nerviosa">
+           <img src="{{ url_for('static', filename='img/conduccion.jpg') }}" alt="Estudios neurofisiológicos">
 
-                <h3>Velocidad de Conducción Nerviosa</h3>
+            <h3>Estudios Neurofisiológicos Especializados</h3>
 
-                <p>
-                    Medición de la velocidad de transmisión nerviosa.
-                </p>
+            <p>
+                 Evaluaciones avanzadas del sistema nervioso periférico y unión neuromuscular.
+           </p>
 
-                <button class="toggle-btn">
-                    Ver más
-                </button>
+            <a href="/conduccion" class="btn-social">
+                Ver servicio
+            </a>
 
-                <div class="service-details">
-                    <p>
-                        Permite evaluar el funcionamiento de los nervios periféricos
-                        y detectar alteraciones como neuropatías o síndrome del túnel carpiano.
-                    </p>
-                </div>
-
-            </div>
+        </div>
 
             <!-- POTENCIALES EVOCADOS -->
             <div class="card">
@@ -119,16 +131,9 @@
                     Evaluación funcional de las vías nerviosas sensoriales.
                 </p>
 
-                <button class="toggle-btn">
-                    Ver más
-                </button>
-
-                <div class="service-details">
-                    <p>
-                        Estudio utilizado para analizar la respuesta del sistema nervioso
-                        ante estímulos visuales, auditivos o sensitivos.
-                    </p>
-                </div>
+                <a href="/potenciales" class="btn-social">
+                    Ver servicio
+                </a>
 
             </div>
 
@@ -143,16 +148,26 @@
                     Evaluación y tratamiento de enfermedades osteomusculares y neuromusculares.
                 </p>
 
-                <button class="toggle-btn">
-                    Ver más
-                </button>
+                <a href="/fisiatria" class="btn-social">
+                    Ver servicio
+                </a>
 
-                <div class="service-details">
-                    <p>
-                        Consulta médica enfocada en rehabilitación física,
-                        dolor musculoesquelético y recuperación funcional.
-                    </p>
-                </div>
+            </div>
+
+            <!-- ONDAS DE CHOQUE -->
+            <div class="card">
+
+                <img src="{{ url_for('static', filename='img/ondas.jpg') }}" alt="Ondas de choque">
+
+                <h3>Ondas de Choque</h3>
+
+                <p>
+                    Tratamiento especializado para dolor crónico osteomuscular y espasticidad.
+                </p>
+
+                <a href="/ondas" class="btn-social">
+                    Ver servicio
+                </a>
 
             </div>
 
