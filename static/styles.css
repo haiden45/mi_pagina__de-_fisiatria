@@ -1,38 +1,345 @@
-/* static/styles.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+/* Reset y tipografía */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 20px;
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor central */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Sobre mí */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
     text-align: center;
 }
 
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.about-content img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-a {
+/* Cards de proyectos */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 60px 0;
+}
+
+
+#contacto p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+#contacto a {
     color: #4a90e2;
     text-decoration: none;
+    font-weight: bold;
 }
 
-a:hover {
+#contacto a:hover {
     text-decoration: underline;
 }
 
 
-a:hover {
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+}
+/* Contacto: botones de redes sociales modernos */
+.contacto-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contacto-container .correo {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.contacto-container .correo:hover {
     text-decoration: underline;
 }
+
+
+.btn-social{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:14px 28px;
+    margin:10px 8px 10px 0;
+
+    border:none;
+    border-radius:40px;
+
+    font-size:1rem;
+    font-weight:600;
+    text-decoration:none;
+
+    transition:all .35s ease;
+    cursor:pointer;
+}
+.hero .btn-social{
+    background:white;
+    color:#357ABD;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.hero .btn-social:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+.redes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn-social i{
+    font-size:1.1rem;
+}
+
+/* Colores por red */
+.btn-social.github { background: #333; }
+.btn-social.github:hover { background: #555; }
+
+.btn-social.linkedin { background: #0077b5; }
+.btn-social.linkedin:hover { background: #005582; }
+
+.btn-social.instagram { background: #e4405f; }
+.btn-social.instagram:hover { background: #b22c44; }
+/* ================= HERO ================= */
+
+.hero {
+    background: linear-gradient(135deg, #4a90e2, #357ABD);
+    color: white;
+    padding: 70px 20px;
+}
+
+.hero .container{
+    background: transparent;
+    box-shadow: none;
+}
+
+.hero-container{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+
+}
+
+.hero-texto{
+
+    flex:1;
+
+}
+
+.hero-texto h1{
+
+    font-size:3rem;
+    margin-bottom:15px;
+    line-height:1.2;
+
+}
+
+.hero-texto h2{
+
+    font-size:1.6rem;
+    font-weight:400;
+    margin-bottom:25px;
+
+}
+
+.doctor{
+
+    font-size:1.25rem;
+    margin-bottom:20px;
+
+}
+
+.descripcion{
+
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+.hero-servicios{
+
+    margin-bottom:35px;
+
+}
+
+.hero-servicios p{
+
+    margin:8px 0;
+    font-size:1.05rem;
+
+}
+
+.hero-botones{
+
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+
+}
+
+.hero-imagen{
+
+    flex:0 0 360px;
+    text-align:center;
+
+}
+
+.hero-imagen img{
+    width:250px;
+    max-width:250px;
+    height:auto;
+    display:block;
+    margin:auto;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.hero .btn-social{
+
+    font-size:1rem;
+
+}
+
+/* BOTÓN WHATSAPP CORREGIDO */
+.btn-social.whatsapp {
+    background-color: #25D366;
+    color: white;
+}
+
+.btn-social.whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+@media (max-width:768px){
+
+.hero-container{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+.hero-botones{
+
+    justify-content:center;
+
+}
+
+.hero-texto h1{
+
+    font-size:2.2rem;
+
+}
+
+.hero-texto h2{
+
+    font-size:1.3rem;
+
+}
+
+.hero-imagen{
+
+    flex:auto;
+
+}
+} 

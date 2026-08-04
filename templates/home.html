@@ -23,42 +23,85 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<header>
 
-    <div class="container">
+<!-- HEADER / HERO -->
+<header class="hero">
 
-        <h1>Electrodiagnóstico del Eje Cafetero</h1>
+    <div class="container hero-container">
 
-        <h2>Neurofisiología clínica con precisión, experiencia y compromiso</h2>
+        <!-- TEXTO -->
+        <div class="hero-texto">
 
-        <p class="doctor">
+            <h1>Electrodiagnóstico del Eje Cafetero</h1>
 
-            <strong>Dr. Haiden Pérez</strong><br>
+            <h2>Neurofisiología clínica con precisión,
+                experiencia y compromiso
+            </h2>
 
-            Médico Especialista en Medicina Física y Rehabilitación
+            <p class="doctor">
 
-        </p>
+                <strong>Dr. Haiden Pérez</strong><br>
 
-        <p class="descripcion">
+                Especialista en Medicina Física y Rehabilitación
 
-            Centro especializado en electromiografía, estudios de conducción nerviosa,
-            potenciales evocados, procedimientos especializados y rehabilitación integral.
+            </p>
 
-        </p>
+            <p class="descripcion">
 
-        <a href="https://wa.me/573168336878"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn-social whatsapp">
+                Centro especializado en electrofisiología clínica, con amplia experiencia en
+                electromiografía, estudios de conducción nerviosa, potenciales evocados y
+                procedimientos avanzados de neurofisiología clínica.
 
-            <i class="fab fa-whatsapp"></i>
+            </p>
 
-            Solicitar cita
+            <div class="hero-servicios">
 
-        </a>
+                <p>✔ Electromiografía</p>
+
+                <p>✔ Estudios de conducción nerviosa</p>
+
+                <p>✔ Potenciales evocados</p>
+
+                <p>✔ Neurofisiología clínica especializada</p>
+
+            </div>
+
+            <div class="hero-botones">
+
+                <a href="https://wa.me/573168336878"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn-social whatsapp">
+
+                    <i class="fab fa-whatsapp"></i>
+
+                    Agendar cita
+
+                </a>
+
+                <a href="#servicios"
+                   class="btn-social">
+
+                    Conocer nuestros servicios
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- FOTO -->
+
+        <div class="hero-imagen">
+
+            <img src="{{ url_for('static', filename='img/perfil.jpg') }}"
+                 alt="Dr. Haiden Pérez">
+
+        </div>
 
     </div>
+
+
 
 </header>
 
