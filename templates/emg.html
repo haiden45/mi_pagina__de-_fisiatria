@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,69 +6,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Electromiografía (EMG)</title>
+    <!-- SEO -->
+    <title>Electromiografía (EMG) | Electrodiagnóstico del Eje Cafetero</title>
 
+    <meta name="description"
+          content="Electromiografía en Pereira y el Eje Cafetero. Estudio especializado para la evaluación de músculos y nervios periféricos, neuropatías, radiculopatías y síndromes de atrapamiento nervioso.">
+
+    <meta name="keywords"
+          content="electromiografía Pereira, EMG Pereira, electrodiagnóstico, neuropatías, radiculopatía, túnel carpiano, Eje Cafetero">
+
+    <meta name="author" content="Electrodiagnóstico del Eje Cafetero">
+    <meta name="robots" content="index, follow">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
+<div class="pagina-interna">
 
-            <h1>Electromiografía (EMG)</h1>
+    <!-- ENCABEZADO -->
+    <div class="pagina-interna-header">
+
+        <h1>Electromiografía (EMG)</h1>
+
+        <p>
+            Estudio especializado para la evaluación de la función de los
+            músculos y los nervios periféricos.
+        </p>
+
+    </div>
+
+
+    <!-- CONTENIDO -->
+    <div class="contenido-interno">
+
+        <img
+            src="{{ url_for('static', filename='img/emg.jpg') }}"
+            alt="Electromiografía"
+            style="width:100%; max-width:700px; display:block; margin:0 auto 35px; border-radius:10px;"
+        >
+
+
+        <h2>¿Qué es la electromiografía?</h2>
+
+        <p>
+            La electromiografía es un estudio diagnóstico utilizado para evaluar
+            la función de músculos y nervios periféricos.
+        </p>
+
+        <p>
+            La electromiografía con aguja permite analizar directamente la actividad
+            eléctrica de determinados músculos mediante un electrodo especialmente
+            diseñado para este propósito. Se utiliza en el diagnóstico de enfermedades
+            neuromusculares, neuropatías, radiculopatías y síndromes de atrapamiento
+            nervioso como el síndrome de túnel carpiano.
+        </p>
+
+
+        <h2>¿Cuándo se solicita?</h2>
+
+        <ul>
+            <li>Dolor o debilidad muscular.</li>
+            <li>Hormigueo o adormecimiento.</li>
+            <li>Sospecha de síndrome de túnel carpiano.</li>
+            <li>Lesiones nerviosas.</li>
+            <li>Radiculopatías cervicales o lumbares.</li>
+        </ul>
+
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <div class="preguntas-frecuentes">
+
+            <h2>Preguntas frecuentes</h2>
+
+            <h3>¿La electromiografía es dolorosa?</h3>
 
             <p>
-                Estudio especializado de diagnóstico neuromuscular
+                La mayoría de las personas tolera adecuadamente el estudio.
+                La electromiografía con aguja puede producir una molestia
+                breve durante la evaluación de algunos músculos.
+            </p>
+
+            <h3>¿Es necesario prepararse para el estudio?</h3>
+
+            <p>
+                Generalmente no se requiere una preparación especial.
+                Se recomienda asistir con la piel limpia y evitar el uso
+                de cremas o aceites en la zona que será examinada.
             </p>
 
         </div>
-    </header>
 
-    <section>
-        <div class="container">
 
-            <img 
-                src="{{ url_for('static', filename='img/emg.jpg') }}" 
-                alt="Electromiografía"
-                style="width:100%; max-width:700px; border-radius:10px; margin-bottom:30px;"
-            >
-
-            <h2>¿Qué es la electromiografía?</h2>
-
-            <p>
-                La electromiografía es un estudio diagnóstico utilizado para evaluar
-                la función de músculos y nervios periféricos.
-            </p>
-
-            <p>
-                La electromiografía con aguja permite analizar directamente la actividad
-                eléctrica de determinados músculos mediante un electrodo especialmente
-                diseñado para este propósito. Se utiliza en el diagnóstico de enfermedades neuromusculares, neuropatías,
-                radiculopatías y síndromes de atrapamiento nervioso como
-                el síndrome de túnel carpiano.
-            </p>
-
-            <h2>¿Cuándo se solicita?</h2>
-
-            <ul>
-                <li>Dolor o debilidad muscular</li>
-                <li>Hormigueo o adormecimiento</li>
-                <li>Sospecha de túnel carpiano</li>
-                <li>Lesiones nerviosas</li>
-                <li>Radiculopatías cervicales o lumbares</li>
-            </ul>
-
-            <br>
+        <!-- REGRESAR -->
+        <div class="agenda-interna">
 
             <a href="/" class="btn-social">
-                ← Volver al inicio
+                <i class="fas fa-arrow-left"></i>
+                Volver al inicio
             </a>
 
         </div>
-    </section>
+
+    </div>
+
+</div>
 
 </body>
 </html>
+```

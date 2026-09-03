@@ -343,3 +343,190 @@ footer {
 
 }
 } 
+/* ================= PÁGINAS INTERNAS ================= */
+
+.pagina-interna {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+/* Encabezado de las páginas internas */
+
+.pagina-interna-header {
+    background: linear-gradient(135deg, #4a90e2, #357ABD);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.pagina-interna-header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.pagina-interna-header p {
+    font-size: 1.1rem;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* ================= CONTENIDO ================= */
+
+.contenido-interno {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto 60px;
+    background-color: white;
+    padding: 45px 55px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= TÍTULOS ================= */
+
+.contenido-interno h2 {
+    color: #357ABD;
+    font-size: 1.7rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+.contenido-interno h2:first-child {
+    margin-top: 0;
+}
+
+.contenido-interno h3 {
+    color: #444;
+    font-size: 1.2rem;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* ================= TEXTO ================= */
+
+.contenido-interno p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    color: #444;
+}
+
+/* ================= LISTAS ================= */
+
+.contenido-interno ul {
+    margin: 15px 0 30px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.contenido-interno li {
+    position: relative;
+    padding: 8px 10px 8px 28px;
+    margin-bottom: 4px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Marcador azul */
+
+.contenido-interno li::before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    color: #357ABD;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* ================= PREGUNTAS FRECUENTES ================= */
+
+.preguntas-frecuentes {
+    background-color: #f5f8fb;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.preguntas-frecuentes h2 {
+    margin-top: 0;
+}
+
+.preguntas-frecuentes h3 {
+    color: #357ABD;
+}
+
+/* ================= LLAMADO A LA ACCIÓN ================= */
+
+.agenda-interna {
+    margin-top: 45px;
+    padding: 30px;
+    background-color: #eef5fb;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.agenda-interna h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.agenda-interna p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+.agenda-interna .btn-social {
+    display: inline-flex;
+    margin: 5px;
+}
+
+/* ================= RESPONSIVO PÁGINAS INTERNAS ================= */
+
+@media (max-width: 768px) {
+
+    .pagina-interna-header {
+        padding: 45px 20px;
+    }
+
+    .pagina-interna-header h1 {
+        font-size: 2rem;
+    }
+
+    .pagina-interna-header p {
+        font-size: 1rem;
+    }
+
+    .contenido-interno {
+        width: 92%;
+        padding: 30px 25px;
+        margin-top: 25px;
+    }
+
+    .contenido-interno h2 {
+        font-size: 1.5rem;
+    }
+
+    .contenido-interno h3 {
+        font-size: 1.1rem;
+    }
+
+    .contenido-interno p,
+    .contenido-interno li {
+        font-size: 0.98rem;
+    }
+
+    .contenido-interno li {
+        padding-left: 25px;
+    }
+
+    .preguntas-frecuentes,
+    .agenda-interna {
+        padding: 20px;
+    }
+}
