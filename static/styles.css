@@ -529,4 +529,297 @@ footer {
     .agenda-interna {
         padding: 20px;
     }
+}/* =====================================================
+   CONTACTO
+   ===================================================== */
+
+#contacto {
+    padding: 70px 20px;
+    background: #f4f8fc;
+}
+
+
+.contacto-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ---------- TÍTULO ---------- */
+
+.contacto-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.contacto-titulo i {
+    font-size: 32px;
+    color: #1976d2;
+}
+
+
+.contacto-titulo h2 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+
+.contacto-subtitulo {
+    margin: 15px 0 35px;
+    font-size: 20px;
+    color: #444;
+}
+
+
+/* ---------- TARJETAS DE CONTACTO ---------- */
+
+.contacto-opciones {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.contacto-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    background: #ffffff;
+
+    padding: 18px 25px;
+
+    border-radius: 16px;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.contacto-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------- ICONOS ---------- */
+
+.contacto-icono {
+    width: 58px;
+    height: 58px;
+
+    min-width: 58px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 20px;
+
+    font-size: 25px;
+}
+
+
+/* Email */
+
+.email-icono {
+    background: #e7f0ff;
+    color: #1976d2;
+}
+
+
+/* WhatsApp */
+
+.whatsapp-icono {
+    background: #e5f8ee;
+    color: #18a957;
+}
+
+
+/* Ubicación */
+
+.ubicacion-icono {
+    background: #ffe8ef;
+    color: #e83e68;
+}
+
+
+/* ---------- TEXTO ---------- */
+
+.contacto-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.contacto-texto span {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.contacto-texto strong {
+    font-size: 18px;
+    color: #1976d2;
+    font-weight: 500;
+}
+
+
+/* La ubicación no es un enlace */
+
+.contacto-card:last-child .contacto-texto strong {
+    color: #333;
+}
+
+
+/* ---------- TÍTULO REDES ---------- */
+
+.redes-titulo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    max-width: 800px;
+
+    margin: 45px auto 25px;
+}
+
+
+.redes-titulo span {
+    flex: 1;
+    height: 1px;
+    background: #d9e3ee;
+}
+
+
+.redes-titulo h3 {
+    margin: 0;
+
+    font-size: 24px;
+
+    color: #333;
+
+    white-space: nowrap;
+}
+
+
+/* ---------- REDES ---------- */
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+
+    flex-wrap: wrap;
+}
+
+
+.redes .btn-social {
+    width: 190px;
+
+    padding: 16px 20px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.redes .btn-social:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+.redes .btn-social i {
+    font-size: 21px;
+}
+
+
+/* ---------- MÓVILES ---------- */
+
+@media (max-width: 600px) {
+
+    #contacto {
+        padding: 50px 15px;
+    }
+
+
+    .contacto-titulo h2 {
+        font-size: 30px;
+    }
+
+
+    .contacto-subtitulo {
+        font-size: 18px;
+    }
+
+
+    .contacto-card {
+        padding: 15px;
+    }
+
+
+    .contacto-icono {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+
+        margin-right: 15px;
+
+        font-size: 21px;
+    }
+
+
+    .contacto-texto strong {
+        font-size: 15px;
+
+        word-break: break-word;
+    }
+
+
+    .redes-titulo {
+        gap: 12px;
+    }
+
+
+    .redes-titulo h3 {
+        font-size: 20px;
+    }
+
+
+    .redes .btn-social {
+        width: 100%;
+        max-width: 280px;
+    }
+
 }
